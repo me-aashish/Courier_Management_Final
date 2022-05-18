@@ -11,7 +11,7 @@ $email=$_POST['email'];
 $track=$_POST['trackerid'];
 
 
-$s="select*from tbl_courier_add where SenderEmail ='$email' and OrderNumber ='$track'";
+$s="select*from tbl_courier_add_admin where SenderEmail ='$email' and OrderNumber ='$track'";
 $result = mysqli_query($con,$s);
 $num = mysqli_num_rows($result);
 // $type = "select type from users where email ='$email' and OrderNumber ='$trackerid'";
