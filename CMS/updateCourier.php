@@ -20,7 +20,7 @@
         $radd = $_REQUEST['radd'];
         $id = $_SESSION['id'];
         
-        $sql = "UPDATE tbl_courier_add SET  CurrentLocation = '$radd' WHERE OrderNumber = '$id'";
+        $sql = "UPDATE tbl_courier_add_admin SET  CurrentLocation = '$radd' WHERE OrderNumber = '$id'";
           
           
         //   echo $unique = $today . $rand;
