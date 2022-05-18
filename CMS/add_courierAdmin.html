@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Courier</title>
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid rgb(255, 255, 255);
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        .submit-btn {
+            position: relative;
+            left: 42%;
+            background-color: #aa049c;
+            color: rgb(255, 255, 255);
+            background-color:#410338;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #7d0081;
+        }
+
+        .container {
+            /* border-radius: 5px; */
+            /* background-color: #f2f2f2; */ 
+            /* background-image: url("666.jpg");
+            width: 100%;
+            background-position: center;
+            background-size:cover;
+            height: 100vh;
+            padding: 20px; */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("add_c.png");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+
+        /* .sender{
+            background-image: url("666.jpg");
+            background-size:cover;
+        } */
+        .try{
+            width: 40%;
+            border-radius: 4px;
+            border-radius: 4px;
+            position: relative;
+            left: 30%;
+        }
+        #heading{
+            color:#2b88df;
+            color:#410338;
+            color:#c8b1b1;
+            text-align: center;
+            background-image: url("b22.jpg");
+            border-radius: 5px;
+            font-size: 40px;
+            font-variant: small-caps;
+            font-weight: 500;
+            /* background-color: #004381; */
+            /* border: 2px solid blue; */
+            /* border-radius: 8px; */
+        }
+        .label{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-variant: small-caps;
+            font-weight: 500;
+            /* color:#ff00d9; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="try">
+            <h1 id="heading">Add Courier</h1>
+        <form action="add_courierAdmin.php" method="post">
+            <br>
+            
+                <h1 style="color:rgb(147, 147, 179);">Sender Details</h1>
+                <label class="label" for=" Sender Name">Name</label>
+                <input type="text" id="sname" name="sname" placeholder="Sender name.." required>
+
+                <label class="label" for="email">Sender Email</label>
+                <input type="text" id="semail" name="semail" placeholder="Sender email id.." required>
+
+                
+                <label class="label" for="email">Sender Phone</label>
+                <input type="text" id="sphone" name="sphone" placeholder="Sender Phone number.." required>
+
+                <label class="label" for="weight">Weigth(in KiloGrams)</label>
+                <input type="text" id="weight" name="weight" placeholder="Courier Weight.." required>
+                <br>
+                <label class="label" for="country">Country</label>
+                <select id="country" name="scountry" required>
+                    <option>Country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Usa">USA</option>
+                </select>
+                <hr>
+                <label class="label" for="address">Sender Address</label>
+                <textarea id="senderadd" name="sadd" placeholder="Address.." style="height:200px" required></textarea>
+            
+            <br>
+            <h1 style="color:rgb(147, 147, 179);">Receiver Details</h1>
+            <label class="label" for=" Receiver Name">Name</label>
+            <input type="text" id="rname" name="rname" placeholder="Receiver name.." required>
+
+            <label class="label" for="email">Receiver Email</label>
+            <input type="text" id="remail" name="remail" placeholder="Receiver email id.." required>
+
+            
+            <label class="label" for="email">Receiver Phone</label>
+            <input type="text" id="rphone" name="rphone" placeholder="Receiver Phone number.." required>
+
+            <br>
+            <label class="label" for="country">Country</label>
+            <select id="country" name="rcountry" required>
+                <option>Country</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <hr>
+            <label class="label" for="address">Receiver Address</label>
+            <textarea id="ReceiverAdd" name="radd" placeholder="Address.." style="height:200px" required></textarea>
+
+            <label class="label" for="amount">Amount/Delivery Charges(in Rupees) </label>
+            <input type="text" id="amount" name="amount" placeholder="Bill" required>
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+        <div>
+            
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
